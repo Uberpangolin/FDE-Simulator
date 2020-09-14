@@ -1,0 +1,1481 @@
+[
+ {
+  "kind" : "module",
+  "file" : "ExtraMath.d",
+  "members" : [
+   {
+    "name" : "polynomial",
+    "kind" : "import",
+    "line" : 1,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "simpleDifEq",
+    "kind" : "import",
+    "line" : 2,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.mathspecial",
+    "kind" : "import",
+    "line" : 3,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.algorithm",
+    "kind" : "import",
+    "line" : 4,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "ExtraMath",
+    "kind" : "class",
+    "line" : 6,
+    "char" : 1,
+    "members" : [
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 8,
+      "char" : 2,
+      "deco" : "FZC9ExtraMathQk",
+      "originalType" : "()",
+      "endline" : 8,
+      "endchar" : 10
+     },
+     {
+      "name" : "buildFractionDifEqRL",
+      "kind" : "function",
+      "line" : 11,
+      "char" : 14,
+      "deco" : "FiddZC11simpleDifEqQn",
+      "parameters" : [
+       {
+        "name" : "order",
+        "deco" : "i"
+       },
+       {
+        "name" : "center",
+        "deco" : "d"
+       },
+       {
+        "name" : "dOrder",
+        "deco" : "d"
+       }
+      ],
+      "endline" : 19,
+      "endchar" : 2
+     },
+     {
+      "name" : "buildFractionalDifEqCapS",
+      "kind" : "function",
+      "line" : 21,
+      "char" : 14,
+      "deco" : "FidddZC11simpleDifEqQn",
+      "parameters" : [
+       {
+        "name" : "order",
+        "deco" : "i"
+       },
+       {
+        "name" : "center",
+        "deco" : "d"
+       },
+       {
+        "name" : "dOrder",
+        "deco" : "d"
+       },
+       {
+        "name" : "BCP",
+        "deco" : "d"
+       }
+      ],
+      "endline" : 24,
+      "endchar" : 2
+     },
+     {
+      "name" : "isolateHighestDerivative",
+      "kind" : "function",
+      "line" : 26,
+      "char" : 14,
+      "deco" : "FC11simpleDifEqQnZQr",
+      "parameters" : [
+       {
+        "name" : "diffEq",
+        "deco" : "C11simpleDifEqQn"
+       }
+      ],
+      "endline" : 37,
+      "endchar" : 2
+     },
+     {
+      "name" : "combinePolynomial",
+      "kind" : "function",
+      "line" : 39,
+      "char" : 13,
+      "deco" : "FC10polynomialQmQpZQs",
+      "parameters" : [
+       {
+        "name" : "p1",
+        "deco" : "C10polynomialQm"
+       },
+       {
+        "name" : "p2",
+        "deco" : "C10polynomialQm"
+       }
+      ],
+      "endline" : 53,
+      "endchar" : 2
+     },
+     {
+      "name" : "combineDifEq",
+      "kind" : "function",
+      "line" : 55,
+      "char" : 14,
+      "deco" : "FC11simpleDifEqQnQqZQt",
+      "parameters" : [
+       {
+        "name" : "d1",
+        "deco" : "C11simpleDifEqQn"
+       },
+       {
+        "name" : "d2",
+        "deco" : "C11simpleDifEqQn"
+       }
+      ],
+      "endline" : 69,
+      "endchar" : 2
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "Fractional",
+  "kind" : "module",
+  "file" : "Fractional.d",
+  "members" : [
+   {
+    "name" : "std.stdio",
+    "kind" : "import",
+    "line" : 3,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.algorithm",
+    "kind" : "import",
+    "line" : 4,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.range",
+    "kind" : "import",
+    "line" : 5,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "core.runtime",
+    "kind" : "import",
+    "line" : 6,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "core.thread",
+    "kind" : "import",
+    "line" : 7,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.string",
+    "kind" : "import",
+    "line" : 8,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.utf",
+    "kind" : "import",
+    "line" : 9,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.conv",
+    "kind" : "import",
+    "line" : 10,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "numFunction",
+    "kind" : "import",
+    "line" : 12,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "polynomial",
+    "kind" : "import",
+    "line" : 13,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "simpleDifEq",
+    "kind" : "import",
+    "line" : 14,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "ExtraMath",
+    "kind" : "import",
+    "line" : 15,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "kind" : "template",
+    "line" : 17,
+    "char" : 6,
+    "name" : "toUTF16z",
+    "parameters" : [
+     {
+      "name" : "S",
+      "kind" : "type"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "toUTF16z",
+      "kind" : "function",
+      "line" : 17,
+      "char" : 6,
+      "storageClass" : [
+       "auto"
+      ],
+      "type" : "(S s)",
+      "parameters" : [
+       {
+        "name" : "s",
+        "type" : "S"
+       }
+      ],
+      "endline" : 20,
+      "endchar" : 1
+     }
+    ]
+   },
+   {
+    "name" : "std.math",
+    "kind" : "import",
+    "line" : 22,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "core.sys.windows.windef",
+    "kind" : "import",
+    "line" : 26,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "core.sys.windows.winuser",
+    "kind" : "import",
+    "line" : 27,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "core.sys.windows.wingdi",
+    "kind" : "import",
+    "line" : 28,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "core.sys.windows.wingdi",
+    "kind" : "import",
+    "line" : 29,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "WinMain",
+    "kind" : "function",
+    "line" : 32,
+    "char" : 5,
+    "linkage" : "windows",
+    "deco" : "WPvQcPaiZi",
+    "originalType" : "extern (Windows) int(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int iCmdShow)",
+    "parameters" : [
+     {
+      "name" : "hInstance",
+      "deco" : "Pv"
+     },
+     {
+      "name" : "hPrevInstance",
+      "deco" : "Pv"
+     },
+     {
+      "name" : "lpCmdLine",
+      "deco" : "Pa"
+     },
+     {
+      "name" : "iCmdShow",
+      "deco" : "i"
+     }
+    ],
+    "endline" : 50,
+    "endchar" : 1
+   },
+   {
+    "name" : "myWinMain",
+    "kind" : "function",
+    "line" : 52,
+    "char" : 5,
+    "deco" : "FPvQcPaiZi",
+    "originalType" : "int(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int iCmdShow)",
+    "parameters" : [
+     {
+      "name" : "hInstance",
+      "deco" : "Pv"
+     },
+     {
+      "name" : "hPrevInstance",
+      "deco" : "Pv"
+     },
+     {
+      "name" : "lpCmdLine",
+      "deco" : "Pa"
+     },
+     {
+      "name" : "iCmdShow",
+      "deco" : "i"
+     }
+    ],
+    "endline" : 100,
+    "endchar" : 1
+   },
+   {
+    "name" : "NUM",
+    "kind" : "variable",
+    "line" : 102,
+    "char" : 6,
+    "storageClass" : [
+     "enum"
+    ],
+    "deco" : "i",
+    "init" : "1000"
+   },
+   {
+    "name" : "shiftX",
+    "kind" : "variable",
+    "line" : 103,
+    "char" : 5,
+    "deco" : "i"
+   },
+   {
+    "name" : "shiftY",
+    "kind" : "variable",
+    "line" : 104,
+    "char" : 5,
+    "deco" : "i"
+   },
+   {
+    "name" : "xPos",
+    "kind" : "variable",
+    "line" : 105,
+    "char" : 6,
+    "deco" : "k"
+   },
+   {
+    "name" : "yPos",
+    "kind" : "variable",
+    "line" : 106,
+    "char" : 6,
+    "deco" : "k"
+   },
+   {
+    "name" : "translateX",
+    "kind" : "variable",
+    "line" : 107,
+    "char" : 5,
+    "deco" : "i",
+    "init" : "0"
+   },
+   {
+    "name" : "translateY",
+    "kind" : "variable",
+    "line" : 108,
+    "char" : 5,
+    "deco" : "i",
+    "init" : "0"
+   },
+   {
+    "name" : "tempTranslateX",
+    "kind" : "variable",
+    "line" : 109,
+    "char" : 5,
+    "deco" : "i",
+    "init" : "0"
+   },
+   {
+    "name" : "tempTranslateY",
+    "kind" : "variable",
+    "line" : 110,
+    "char" : 5,
+    "deco" : "i",
+    "init" : "0"
+   },
+   {
+    "name" : "mousedown",
+    "kind" : "variable",
+    "line" : 111,
+    "char" : 6,
+    "deco" : "b",
+    "init" : "false"
+   },
+   {
+    "name" : "scale",
+    "kind" : "variable",
+    "line" : 112,
+    "char" : 5,
+    "deco" : "i",
+    "init" : "160"
+   },
+   {
+    "name" : "frames",
+    "kind" : "variable",
+    "line" : 113,
+    "char" : 5,
+    "deco" : "i",
+    "init" : "0"
+   },
+   {
+    "name" : "apt",
+    "kind" : "variable",
+    "line" : 115,
+    "char" : 12,
+    "deco" : "G1000S4core3sys7windows6windef5POINT",
+    "originalType" : "POINT[NUM]"
+   },
+   {
+    "name" : "apt_t",
+    "kind" : "variable",
+    "line" : 116,
+    "char" : 12,
+    "deco" : "G1000S4core3sys7windows6windef5POINT",
+    "originalType" : "POINT[NUM]"
+   },
+   {
+    "name" : "lastLocation",
+    "kind" : "variable",
+    "line" : 117,
+    "char" : 7,
+    "deco" : "S4core3sys7windows6windef5POINT"
+   },
+   {
+    "name" : "smallPen",
+    "kind" : "variable",
+    "line" : 119,
+    "char" : 6,
+    "deco" : "Pv",
+    "originalType" : "HPEN"
+   },
+   {
+    "name" : "medPen",
+    "kind" : "variable",
+    "line" : 120,
+    "char" : 6,
+    "deco" : "Pv",
+    "originalType" : "HPEN"
+   },
+   {
+    "name" : "bigPen",
+    "kind" : "variable",
+    "line" : 121,
+    "char" : 6,
+    "deco" : "Pv",
+    "originalType" : "HPEN"
+   },
+   {
+    "name" : "extraMath",
+    "kind" : "variable",
+    "line" : 123,
+    "char" : 11,
+    "deco" : "C9ExtraMathQk",
+    "originalType" : "ExtraMath"
+   },
+   {
+    "name" : "func",
+    "kind" : "variable",
+    "line" : 127,
+    "char" : 12,
+    "deco" : "C10polynomialQm",
+    "originalType" : "polynomial"
+   },
+   {
+    "name" : "diffEQ",
+    "kind" : "variable",
+    "line" : 128,
+    "char" : 13,
+    "deco" : "C11simpleDifEqQn",
+    "originalType" : "simpleDifEq"
+   },
+   {
+    "name" : "WndProc",
+    "kind" : "function",
+    "line" : 131,
+    "char" : 9,
+    "linkage" : "windows",
+    "deco" : "WNbPvkkiZi",
+    "originalType" : "nothrow extern (Windows) LRESULT(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)",
+    "parameters" : [
+     {
+      "name" : "hwnd",
+      "deco" : "Pv"
+     },
+     {
+      "name" : "message",
+      "deco" : "k"
+     },
+     {
+      "name" : "wParam",
+      "deco" : "k"
+     },
+     {
+      "name" : "lParam",
+      "deco" : "i"
+     }
+    ],
+    "endline" : 350,
+    "endchar" : 1
+   }
+  ]
+ },
+ {
+  "kind" : "module",
+  "file" : "function.d",
+  "members" : [
+   {
+    "name" : "functions",
+    "kind" : "class",
+    "line" : 1,
+    "char" : 1,
+    "members" : [
+     {
+      "name" : "length",
+      "kind" : "variable",
+      "line" : 3,
+      "char" : 6,
+      "deco" : "i",
+      "offset" : 8
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 7,
+      "char" : 2,
+      "deco" : "FiZC8function9functions",
+      "originalType" : "(int length)",
+      "parameters" : [
+       {
+        "name" : "length",
+        "deco" : "i"
+       }
+      ],
+      "endline" : 10,
+      "endchar" : 2
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 12,
+      "char" : 2,
+      "deco" : "FZC8function9functions",
+      "originalType" : "()",
+      "endline" : 14,
+      "endchar" : 2
+     },
+     {
+      "name" : "getLength",
+      "kind" : "function",
+      "line" : 18,
+      "char" : 6,
+      "deco" : "FZi",
+      "endline" : 20,
+      "endchar" : 2
+     },
+     {
+      "name" : "setLength",
+      "kind" : "function",
+      "line" : 24,
+      "char" : 7,
+      "deco" : "FiZv",
+      "parameters" : [
+       {
+        "name" : "length",
+        "deco" : "i"
+       }
+      ],
+      "endline" : 26,
+      "endchar" : 2
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "functionCollection",
+  "kind" : "module",
+  "file" : "functionCollection.d",
+  "members" : [
+   {
+    "name" : "std.range",
+    "kind" : "import",
+    "line" : 5,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "core.runtime",
+    "kind" : "import",
+    "line" : 6,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "core.thread",
+    "kind" : "import",
+    "line" : 7,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.string",
+    "kind" : "import",
+    "line" : 8,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.utf",
+    "kind" : "import",
+    "line" : 9,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.conv",
+    "kind" : "import",
+    "line" : 10,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "kind" : "template",
+    "line" : 12,
+    "char" : 6,
+    "name" : "toUTF16z",
+    "parameters" : [
+     {
+      "name" : "S",
+      "kind" : "type"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "toUTF16z",
+      "kind" : "function",
+      "line" : 12,
+      "char" : 6,
+      "storageClass" : [
+       "auto"
+      ],
+      "type" : "(S s)",
+      "parameters" : [
+       {
+        "name" : "s",
+        "type" : "S"
+       }
+      ],
+      "endline" : 15,
+      "endchar" : 1
+     }
+    ]
+   },
+   {
+    "name" : "core.sys.windows.windef",
+    "kind" : "import",
+    "line" : 18,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "core.sys.windows.winuser",
+    "kind" : "import",
+    "line" : 19,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "core.sys.windows.wingdi",
+    "kind" : "import",
+    "line" : 20,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "numFunction",
+    "kind" : "import",
+    "line" : 24,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "functionCollection",
+    "kind" : "class",
+    "line" : 26,
+    "char" : 1,
+    "members" : [
+     {
+      "name" : "length",
+      "kind" : "variable",
+      "line" : 28,
+      "char" : 6,
+      "deco" : "i",
+      "offset" : 8
+     },
+     {
+      "name" : "functions",
+      "kind" : "variable",
+      "line" : 29,
+      "char" : 16,
+      "deco" : "AC11numFunctionQn",
+      "offset" : 12
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 33,
+      "char" : 2,
+      "deco" : "FiZC18functionCollectionQu",
+      "originalType" : "(int length)",
+      "parameters" : [
+       {
+        "name" : "length",
+        "deco" : "i"
+       }
+      ],
+      "endline" : 36,
+      "endchar" : 2
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 38,
+      "char" : 2,
+      "deco" : "FZC18functionCollectionQu",
+      "originalType" : "()",
+      "endline" : 38,
+      "endchar" : 10
+     },
+     {
+      "name" : "getLength",
+      "kind" : "function",
+      "line" : 42,
+      "char" : 6,
+      "deco" : "FZi",
+      "endline" : 44,
+      "endchar" : 2
+     },
+     {
+      "name" : "getFunctions",
+      "kind" : "function",
+      "line" : 46,
+      "char" : 17,
+      "deco" : "FZPAC11numFunctionQn",
+      "endline" : 48,
+      "endchar" : 2
+     },
+     {
+      "name" : "setLength",
+      "kind" : "function",
+      "line" : 52,
+      "char" : 7,
+      "deco" : "FiZv",
+      "parameters" : [
+       {
+        "name" : "length",
+        "deco" : "i"
+       }
+      ],
+      "endline" : 54,
+      "endchar" : 2
+     },
+     {
+      "name" : "setValues",
+      "kind" : "function",
+      "line" : 56,
+      "char" : 7,
+      "deco" : "FAC11numFunctionQnZv",
+      "parameters" : [
+       {
+        "name" : "value",
+        "deco" : "AC11numFunctionQn"
+       }
+      ],
+      "endline" : 58,
+      "endchar" : 2
+     },
+     {
+      "name" : "defineValues",
+      "kind" : "function",
+      "line" : 63,
+      "char" : 7,
+      "deco" : "FZv",
+      "endline" : 65,
+      "endchar" : 2
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "kind" : "module",
+  "file" : "numFunction.d",
+  "members" : [
+   {
+    "name" : "std.range",
+    "kind" : "import",
+    "line" : 3,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "core.runtime",
+    "kind" : "import",
+    "line" : 4,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "core.thread",
+    "kind" : "import",
+    "line" : 5,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.string",
+    "kind" : "import",
+    "line" : 6,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.utf",
+    "kind" : "import",
+    "line" : 7,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.conv",
+    "kind" : "import",
+    "line" : 8,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "kind" : "template",
+    "line" : 10,
+    "char" : 6,
+    "name" : "toUTF16z",
+    "parameters" : [
+     {
+      "name" : "S",
+      "kind" : "type"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "toUTF16z",
+      "kind" : "function",
+      "line" : 10,
+      "char" : 6,
+      "storageClass" : [
+       "auto"
+      ],
+      "type" : "(S s)",
+      "parameters" : [
+       {
+        "name" : "s",
+        "type" : "S"
+       }
+      ],
+      "endline" : 13,
+      "endchar" : 1
+     }
+    ]
+   },
+   {
+    "name" : "core.sys.windows.windef",
+    "kind" : "import",
+    "line" : 15,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "core.sys.windows.winuser",
+    "kind" : "import",
+    "line" : 16,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "core.sys.windows.wingdi",
+    "kind" : "import",
+    "line" : 17,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "numFunction",
+    "kind" : "class",
+    "line" : 21,
+    "char" : 1,
+    "members" : [
+     {
+      "name" : "length",
+      "kind" : "variable",
+      "line" : 23,
+      "char" : 6,
+      "deco" : "i",
+      "offset" : 8
+     },
+     {
+      "name" : "value",
+      "kind" : "variable",
+      "line" : 24,
+      "char" : 11,
+      "deco" : "Ad",
+      "offset" : 12
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 28,
+      "char" : 2,
+      "deco" : "FiZC11numFunctionQn",
+      "originalType" : "(int length)",
+      "parameters" : [
+       {
+        "name" : "length",
+        "deco" : "i"
+       }
+      ],
+      "endline" : 31,
+      "endchar" : 2
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 33,
+      "char" : 2,
+      "deco" : "FZC11numFunctionQn",
+      "originalType" : "()",
+      "endline" : 33,
+      "endchar" : 10
+     },
+     {
+      "name" : "getLength",
+      "kind" : "function",
+      "line" : 37,
+      "char" : 6,
+      "deco" : "FZi",
+      "endline" : 39,
+      "endchar" : 2
+     },
+     {
+      "name" : "getValues",
+      "kind" : "function",
+      "line" : 41,
+      "char" : 12,
+      "deco" : "FZPAd",
+      "endline" : 43,
+      "endchar" : 2
+     },
+     {
+      "name" : "setLength",
+      "kind" : "function",
+      "line" : 47,
+      "char" : 7,
+      "deco" : "FiZv",
+      "parameters" : [
+       {
+        "name" : "length",
+        "deco" : "i"
+       }
+      ],
+      "endline" : 49,
+      "endchar" : 2
+     },
+     {
+      "name" : "setValues",
+      "kind" : "function",
+      "line" : 51,
+      "char" : 7,
+      "deco" : "FAdZv",
+      "parameters" : [
+       {
+        "name" : "value",
+        "deco" : "Ad"
+       }
+      ],
+      "endline" : 53,
+      "endchar" : 2
+     },
+     {
+      "name" : "defineValues",
+      "kind" : "function",
+      "line" : 58,
+      "char" : 7,
+      "deco" : "FZv",
+      "endline" : 60,
+      "endchar" : 2
+     },
+     {
+      "name" : "defineValuesCustom",
+      "kind" : "function",
+      "line" : 62,
+      "char" : 7,
+      "deco" : "FlZv",
+      "parameters" : [
+       {
+        "name" : "flag",
+        "deco" : "l"
+       }
+      ],
+      "endline" : 66,
+      "endchar" : 2
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "kind" : "module",
+  "file" : "polynomial.d",
+  "members" : [
+   {
+    "name" : "numFunction",
+    "kind" : "import",
+    "line" : 1,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.math",
+    "kind" : "import",
+    "line" : 2,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.conv",
+    "kind" : "import",
+    "line" : 3,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "polynomial",
+    "kind" : "class",
+    "line" : 11,
+    "char" : 1,
+    "members" : [
+     {
+      "name" : "polynomial",
+      "kind" : "variable",
+      "line" : 13,
+      "char" : 17,
+      "deco" : "Hdd",
+      "offset" : 8
+     },
+     {
+      "name" : "denominator",
+      "kind" : "variable",
+      "line" : 14,
+      "char" : 7,
+      "deco" : "b",
+      "init" : "false",
+      "offset" : 12
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 18,
+      "char" : 2,
+      "deco" : "FZC10polynomialQm",
+      "originalType" : "()",
+      "endline" : 18,
+      "endchar" : 10
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 20,
+      "char" : 2,
+      "deco" : "FHddZC10polynomialQm",
+      "originalType" : "(double[double] polynomial)",
+      "parameters" : [
+       {
+        "name" : "polynomial",
+        "deco" : "Hdd"
+       }
+      ],
+      "endline" : 22,
+      "endchar" : 2
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 24,
+      "char" : 2,
+      "deco" : "FddZC10polynomialQm",
+      "originalType" : "(double constant, double order)",
+      "parameters" : [
+       {
+        "name" : "constant",
+        "deco" : "d"
+       },
+       {
+        "name" : "order",
+        "deco" : "d"
+       }
+      ],
+      "endline" : 26,
+      "endchar" : 2
+     },
+     {
+      "name" : "setPolynomial",
+      "kind" : "function",
+      "line" : 31,
+      "char" : 7,
+      "deco" : "FHddZv",
+      "parameters" : [
+       {
+        "name" : "polynomial",
+        "deco" : "Hdd"
+       }
+      ],
+      "endline" : 33,
+      "endchar" : 2
+     },
+     {
+      "name" : "getPolynomial",
+      "kind" : "function",
+      "line" : 37,
+      "char" : 17,
+      "deco" : "FZHdd",
+      "endline" : 39,
+      "endchar" : 2
+     },
+     {
+      "name" : "getTerm",
+      "kind" : "function",
+      "line" : 41,
+      "char" : 9,
+      "deco" : "FdZd",
+      "parameters" : [
+       {
+        "name" : "order",
+        "deco" : "d"
+       }
+      ],
+      "endline" : 43,
+      "endchar" : 2
+     },
+     {
+      "name" : "addTerm",
+      "kind" : "function",
+      "line" : 47,
+      "char" : 7,
+      "deco" : "FddZv",
+      "parameters" : [
+       {
+        "name" : "constant",
+        "deco" : "d"
+       },
+       {
+        "name" : "order",
+        "deco" : "d"
+       }
+      ],
+      "endline" : 49,
+      "endchar" : 2
+     },
+     {
+      "name" : "evaluate",
+      "kind" : "function",
+      "line" : 51,
+      "char" : 9,
+      "deco" : "FdZd",
+      "parameters" : [
+       {
+        "name" : "input",
+        "deco" : "d"
+       }
+      ],
+      "endline" : 61,
+      "endchar" : 2
+     },
+     {
+      "name" : "toString",
+      "kind" : "function",
+      "line" : 64,
+      "char" : 18,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FZAya",
+      "endline" : 71,
+      "endchar" : 2,
+      "overrides" : [
+       "object.Object.toString"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "kind" : "module",
+  "file" : "simpleDifEq.d",
+  "members" : [
+   {
+    "name" : "polynomial",
+    "kind" : "import",
+    "line" : 1,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "numFunction",
+    "kind" : "import",
+    "line" : 2,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.conv",
+    "kind" : "import",
+    "line" : 3,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "simpleDifEq",
+    "kind" : "class",
+    "line" : 11,
+    "char" : 1,
+    "members" : [
+     {
+      "name" : "differentialEquation",
+      "kind" : "variable",
+      "line" : 13,
+      "char" : 18,
+      "deco" : "HiC10polynomialQm",
+      "offset" : 8
+     },
+     {
+      "name" : "solution",
+      "kind" : "variable",
+      "line" : 14,
+      "char" : 14,
+      "deco" : "C11numFunctionQn",
+      "originalType" : "numFunction",
+      "offset" : 12
+     },
+     {
+      "name" : "highestOrder",
+      "kind" : "variable",
+      "line" : 15,
+      "char" : 6,
+      "deco" : "i",
+      "init" : "0",
+      "offset" : 16
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 19,
+      "char" : 2,
+      "deco" : "FZC11simpleDifEqQn",
+      "originalType" : "()",
+      "endline" : 19,
+      "endchar" : 10
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 21,
+      "char" : 2,
+      "deco" : "FHiC10polynomialQmZC11simpleDifEqQn",
+      "originalType" : "(polynomial[int] differentialEquation)",
+      "parameters" : [
+       {
+        "name" : "differentialEquation",
+        "deco" : "HiC10polynomialQm"
+       }
+      ],
+      "endline" : 23,
+      "endchar" : 2
+     },
+     {
+      "name" : "setDifEq",
+      "kind" : "function",
+      "line" : 27,
+      "char" : 7,
+      "deco" : "FHiC10polynomialQmZv",
+      "parameters" : [
+       {
+        "name" : "differentialEquation",
+        "deco" : "HiC10polynomialQm"
+       }
+      ],
+      "endline" : 32,
+      "endchar" : 2
+     },
+     {
+      "name" : "setDifEqTerm",
+      "kind" : "function",
+      "line" : 34,
+      "char" : 7,
+      "deco" : "FC10polynomialQmiZv",
+      "parameters" : [
+       {
+        "name" : "polynomial",
+        "deco" : "C10polynomialQm"
+       },
+       {
+        "name" : "order",
+        "deco" : "i"
+       }
+      ],
+      "endline" : 36,
+      "endchar" : 2
+     },
+     {
+      "name" : "getDiffEq",
+      "kind" : "function",
+      "line" : 40,
+      "char" : 18,
+      "deco" : "FZHiC10polynomialQm",
+      "endline" : 42,
+      "endchar" : 2
+     },
+     {
+      "name" : "getTerm",
+      "kind" : "function",
+      "line" : 44,
+      "char" : 13,
+      "deco" : "FiZC10polynomialQm",
+      "parameters" : [
+       {
+        "name" : "order",
+        "deco" : "i"
+       }
+      ],
+      "endline" : 46,
+      "endchar" : 2
+     },
+     {
+      "name" : "addTerm",
+      "kind" : "function",
+      "line" : 50,
+      "char" : 7,
+      "deco" : "FC10polynomialQmiZv",
+      "parameters" : [
+       {
+        "name" : "polynomial",
+        "deco" : "C10polynomialQm"
+       },
+       {
+        "name" : "order",
+        "deco" : "i"
+       }
+      ],
+      "endline" : 53,
+      "endchar" : 2
+     },
+     {
+      "name" : "toString",
+      "kind" : "function",
+      "line" : 55,
+      "char" : 18,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FZAya",
+      "endline" : 62,
+      "endchar" : 2,
+      "overrides" : [
+       "object.Object.toString"
+      ]
+     },
+     {
+      "name" : "getPolynomial",
+      "kind" : "function",
+      "line" : 64,
+      "char" : 13,
+      "deco" : "FiZC10polynomialQm",
+      "parameters" : [
+       {
+        "name" : "order",
+        "deco" : "i"
+       }
+      ],
+      "endline" : 66,
+      "endchar" : 2
+     },
+     {
+      "name" : "solveDifferentialEquationSpecial",
+      "kind" : "function",
+      "line" : 78,
+      "char" : 7,
+      "deco" : "FPAdQclZv",
+      "parameters" : [
+       {
+        "name" : "array",
+        "deco" : "PAd"
+       },
+       {
+        "name" : "boundryConditions",
+        "deco" : "Ad"
+       },
+       {
+        "name" : "flag",
+        "deco" : "l"
+       }
+      ],
+      "endline" : 100,
+      "endchar" : 2
+     }
+    ]
+   }
+  ]
+ }
+]
